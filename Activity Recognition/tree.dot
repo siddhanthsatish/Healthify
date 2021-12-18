@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="fft <= 1.004\nentropy = 2.0\nsamples = 6687\nvalue = [1669, 1715, 1629, 1674]"] ;
+1 [label="z_mean <= 0.248\nentropy = 0.053\nsamples = 1635\nvalue = [7, 2, 1626, 0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="x_mean <= -0.295\nentropy = 0.007\nsamples = 1620\nvalue = [1, 0, 1619, 0]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 1619\nvalue = [0, 0, 1619, 0]"] ;
+2 -> 4 ;
+5 [label="y_mean <= -0.085\nentropy = 1.429\nsamples = 15\nvalue = [6, 2, 7, 0]"] ;
+1 -> 5 ;
+6 [label="entropy = 1.061\nsamples = 8\nvalue = [6, 1, 1, 0]"] ;
+5 -> 6 ;
+7 [label="entropy = 0.592\nsamples = 7\nvalue = [0, 1, 6, 0]"] ;
+5 -> 7 ;
+8 [label="z_var <= 1.065\nentropy = 1.591\nsamples = 5052\nvalue = [1662, 1713, 3, 1674]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="fft <= 5.975\nentropy = 0.796\nsamples = 1879\nvalue = [1576, 201, 3, 99]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.554\nsamples = 1682\nvalue = [1514, 131, 3, 34]"] ;
+9 -> 10 ;
+11 [label="entropy = 1.583\nsamples = 197\nvalue = [62, 70, 0, 65]"] ;
+9 -> 11 ;
+12 [label="fft <= 24.215\nentropy = 1.152\nsamples = 3173\nvalue = [86, 1512, 0, 1575]"] ;
+8 -> 12 ;
+13 [label="entropy = 1.122\nsamples = 2360\nvalue = [86, 785, 0, 1489]"] ;
+12 -> 13 ;
+14 [label="entropy = 0.487\nsamples = 813\nvalue = [0, 727, 0, 86]"] ;
+12 -> 14 ;
+}
